@@ -13,7 +13,6 @@
 		4030D1061816546C0021A94D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4030D1041816546C0021A94D /* InfoPlist.strings */; };
 		4030D1081816546C0021A94D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D1071816546C0021A94D /* main.m */; };
 		4030D10C1816546C0021A94D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D10B1816546C0021A94D /* AppDelegate.m */; };
-		4030D10F1816546C0021A94D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4030D10D1816546C0021A94D /* Main.storyboard */; };
 		4030D1121816546C0021A94D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D1111816546C0021A94D /* MasterViewController.m */; };
 		4030D1151816546C0021A94D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D1141816546C0021A94D /* DetailViewController.m */; };
 		4030D1171816546C0021A94D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4030D1161816546C0021A94D /* Images.xcassets */; };
@@ -22,6 +21,15 @@
 		4030D1201816546C0021A94D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030D0FF1816546C0021A94D /* UIKit.framework */; };
 		4030D1281816546C0021A94D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4030D1261816546C0021A94D /* InfoPlist.strings */; };
 		4030D12A1816546C0021A94D /* GetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D1291816546C0021A94D /* GetterTests.m */; };
+		4030D136181655700021A94D /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D135181655700021A94D /* GTMHTTPFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4030D13C181655EC0021A94D /* GTMOAuthAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D139181655EC0021A94D /* GTMOAuthAuthentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4030D13D181655EC0021A94D /* GTMOAuthSignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D13B181655EC0021A94D /* GTMOAuthSignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4030D1411816565C0021A94D /* GTMOAuthViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D13F1816565C0021A94D /* GTMOAuthViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4030D1421816565C0021A94D /* GTMOAuthViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4030D1401816565C0021A94D /* GTMOAuthViewTouch.xib */; };
+		4030D144181657B50021A94D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030D143181657B50021A94D /* SystemConfiguration.framework */; };
+		4030D146181657C20021A94D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030D145181657C20021A94D /* Security.framework */; };
+		4030D1491816721C0021A94D /* TweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D1481816721C0021A94D /* TweetViewController.m */; };
+		40EC5459181676720032F675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EC5458181676720032F675 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +53,6 @@
 		4030D1091816546C0021A94D /* Getter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Getter-Prefix.pch"; sourceTree = "<group>"; };
 		4030D10A1816546C0021A94D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4030D10B1816546C0021A94D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4030D10E1816546C0021A94D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4030D1101816546C0021A94D /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		4030D1111816546C0021A94D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		4030D1131816546C0021A94D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -56,6 +63,20 @@
 		4030D1251816546C0021A94D /* GetterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GetterTests-Info.plist"; sourceTree = "<group>"; };
 		4030D1271816546C0021A94D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4030D1291816546C0021A94D /* GetterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetterTests.m; sourceTree = "<group>"; };
+		4030D134181655700021A94D /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		4030D135181655700021A94D /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		4030D138181655EC0021A94D /* GTMOAuthAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuthAuthentication.h; sourceTree = "<group>"; };
+		4030D139181655EC0021A94D /* GTMOAuthAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuthAuthentication.m; sourceTree = "<group>"; };
+		4030D13A181655EC0021A94D /* GTMOAuthSignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuthSignIn.h; sourceTree = "<group>"; };
+		4030D13B181655EC0021A94D /* GTMOAuthSignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuthSignIn.m; sourceTree = "<group>"; };
+		4030D13E1816565C0021A94D /* GTMOAuthViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuthViewControllerTouch.h; sourceTree = "<group>"; };
+		4030D13F1816565C0021A94D /* GTMOAuthViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuthViewControllerTouch.m; sourceTree = "<group>"; };
+		4030D1401816565C0021A94D /* GTMOAuthViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuthViewTouch.xib; sourceTree = "<group>"; };
+		4030D143181657B50021A94D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4030D145181657C20021A94D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4030D1471816721C0021A94D /* TweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetViewController.h; sourceTree = "<group>"; };
+		4030D1481816721C0021A94D /* TweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetViewController.m; sourceTree = "<group>"; };
+		40EC5458181676720032F675 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4030D146181657C20021A94D /* Security.framework in Frameworks */,
+				4030D144181657B50021A94D /* SystemConfiguration.framework in Frameworks */,
 				4030D0FE1816546C0021A94D /* CoreGraphics.framework in Frameworks */,
 				4030D1001816546C0021A94D /* UIKit.framework in Frameworks */,
 				4030D0FC1816546C0021A94D /* Foundation.framework in Frameworks */,
@@ -104,6 +127,8 @@
 		4030D0FA1816546C0021A94D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4030D145181657C20021A94D /* Security.framework */,
+				4030D143181657B50021A94D /* SystemConfiguration.framework */,
 				4030D0FB1816546C0021A94D /* Foundation.framework */,
 				4030D0FD1816546C0021A94D /* CoreGraphics.framework */,
 				4030D0FF1816546C0021A94D /* UIKit.framework */,
@@ -115,9 +140,13 @@
 		4030D1011816546C0021A94D /* Getter */ = {
 			isa = PBXGroup;
 			children = (
+				4030D133181654FA0021A94D /* GTMHTTPFetcher */,
+				4030D137181655C60021A94D /* GTMOAuth */,
 				4030D10A1816546C0021A94D /* AppDelegate.h */,
 				4030D10B1816546C0021A94D /* AppDelegate.m */,
-				4030D10D1816546C0021A94D /* Main.storyboard */,
+				4030D1471816721C0021A94D /* TweetViewController.h */,
+				40EC5458181676720032F675 /* Main.storyboard */,
+				4030D1481816721C0021A94D /* TweetViewController.m */,
 				4030D1101816546C0021A94D /* MasterViewController.h */,
 				4030D1111816546C0021A94D /* MasterViewController.m */,
 				4030D1131816546C0021A94D /* DetailViewController.h */,
@@ -155,6 +184,30 @@
 				4030D1261816546C0021A94D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4030D133181654FA0021A94D /* GTMHTTPFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				4030D134181655700021A94D /* GTMHTTPFetcher.h */,
+				4030D135181655700021A94D /* GTMHTTPFetcher.m */,
+			);
+			name = GTMHTTPFetcher;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		4030D137181655C60021A94D /* GTMOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				4030D138181655EC0021A94D /* GTMOAuthAuthentication.h */,
+				4030D139181655EC0021A94D /* GTMOAuthAuthentication.m */,
+				4030D13A181655EC0021A94D /* GTMOAuthSignIn.h */,
+				4030D13B181655EC0021A94D /* GTMOAuthSignIn.m */,
+				4030D13E1816565C0021A94D /* GTMOAuthViewControllerTouch.h */,
+				4030D13F1816565C0021A94D /* GTMOAuthViewControllerTouch.m */,
+				4030D1401816565C0021A94D /* GTMOAuthViewTouch.xib */,
+			);
+			name = GTMOAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4030D1171816546C0021A94D /* Images.xcassets in Resources */,
+				4030D1421816565C0021A94D /* GTMOAuthViewTouch.xib in Resources */,
 				4030D1061816546C0021A94D /* InfoPlist.strings in Resources */,
-				4030D10F1816546C0021A94D /* Main.storyboard in Resources */,
+				40EC5459181676720032F675 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +310,13 @@
 			files = (
 				4030D10C1816546C0021A94D /* AppDelegate.m in Sources */,
 				4030D1121816546C0021A94D /* MasterViewController.m in Sources */,
+				4030D13C181655EC0021A94D /* GTMOAuthAuthentication.m in Sources */,
+				4030D1491816721C0021A94D /* TweetViewController.m in Sources */,
+				4030D1411816565C0021A94D /* GTMOAuthViewControllerTouch.m in Sources */,
 				4030D1081816546C0021A94D /* main.m in Sources */,
+				4030D13D181655EC0021A94D /* GTMOAuthSignIn.m in Sources */,
 				4030D1151816546C0021A94D /* DetailViewController.m in Sources */,
+				4030D136181655700021A94D /* GTMHTTPFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +345,6 @@
 				4030D1051816546C0021A94D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4030D10D1816546C0021A94D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4030D10E1816546C0021A94D /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		4030D1261816546C0021A94D /* InfoPlist.strings */ = {
@@ -466,6 +517,7 @@
 				4030D12F1816546C0021A94D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4030D1301816546C0021A94D /* Build configuration list for PBXNativeTarget "GetterTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +526,7 @@
 				4030D1321816546C0021A94D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
