@@ -235,7 +235,7 @@ static const int kMyAlertViewTagAuthenticationError = 1;
 - (void)fetchPostTweet:(NSString *)text
 {
     // 要求を準備
-    NSURL *url = [NSURL URLWithString:@"http://api.twitter.com/1.1/statuses/update.json"];
+    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/1.1/statuses/update.json"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
