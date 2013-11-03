@@ -209,9 +209,15 @@ static const int kMyAlertViewTagAuthenticationError = 1;
     cell.textLabel.font = [UIFont systemFontOfSize:12];
     cell.textLabel.text = [status objectForKey:@"text"];
     
+    
     // ユーザ情報から screen_name を取り出して表示
     NSDictionary *user = [status objectForKey:@"user"];
     cell.detailTextLabel.text = [user objectForKey:@"screen_name"];
+    NSURL *url = [NSURL URLWithString:[user objectForKey:@"profile_image_url"]];
+    NSData *Tweetdata = [NSData dataWithContentsOfURL:url];
+    cell.imageView.image = [UIImage imageWithData:Tweetdata];
+    
+    NSLog(@"%@ - %@", [status objectForKey:@"text"], [[status objectForKey:@"user"] objectForKey:@"screen_name"]);
     
     return cell;
 }

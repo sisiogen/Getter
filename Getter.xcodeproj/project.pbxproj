@@ -29,6 +29,7 @@
 		4030D144181657B50021A94D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030D143181657B50021A94D /* SystemConfiguration.framework */; };
 		4030D146181657C20021A94D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4030D145181657C20021A94D /* Security.framework */; };
 		4030D1491816721C0021A94D /* TweetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4030D1481816721C0021A94D /* TweetViewController.m */; };
+		40D9C7081826990400348106 /* ReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D9C7071826990400348106 /* ReplyViewController.m */; };
 		40EC5459181676720032F675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EC5458181676720032F675 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,8 @@
 		4030D145181657C20021A94D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4030D1471816721C0021A94D /* TweetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetViewController.h; sourceTree = "<group>"; };
 		4030D1481816721C0021A94D /* TweetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetViewController.m; sourceTree = "<group>"; };
+		40D9C7061826990400348106 /* ReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplyViewController.h; sourceTree = "<group>"; };
+		40D9C7071826990400348106 /* ReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplyViewController.m; sourceTree = "<group>"; };
 		40EC5458181676720032F675 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +149,8 @@
 				4030D10B1816546C0021A94D /* AppDelegate.m */,
 				4030D1471816721C0021A94D /* TweetViewController.h */,
 				40EC5458181676720032F675 /* Main.storyboard */,
+				40D9C7061826990400348106 /* ReplyViewController.h */,
+				40D9C7071826990400348106 /* ReplyViewController.m */,
 				4030D1481816721C0021A94D /* TweetViewController.m */,
 				4030D1101816546C0021A94D /* MasterViewController.h */,
 				4030D1111816546C0021A94D /* MasterViewController.m */,
@@ -311,6 +316,7 @@
 				4030D10C1816546C0021A94D /* AppDelegate.m in Sources */,
 				4030D1121816546C0021A94D /* MasterViewController.m in Sources */,
 				4030D13C181655EC0021A94D /* GTMOAuthAuthentication.m in Sources */,
+				40D9C7081826990400348106 /* ReplyViewController.m in Sources */,
 				4030D1491816721C0021A94D /* TweetViewController.m in Sources */,
 				4030D1411816565C0021A94D /* GTMOAuthViewControllerTouch.m in Sources */,
 				4030D1081816546C0021A94D /* main.m in Sources */,
